@@ -9,7 +9,7 @@ gecko_driver_url=https://github.com/mozilla/geckodriver/releases/download/v${gec
 rm -Rf target/artifacts
 mkdir -p target/artifacts/drivers
 cd target/artifacts
-curl -k $selenium_url >selenium-server-standalone.jar
+curl -k $selenium_url > selenium-server-standalone.jar
 cd drivers
 curl -k -O $chrome_driver_url
 zip_file=$(basename $chrome_driver_url)
