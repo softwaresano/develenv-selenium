@@ -1,5 +1,5 @@
 #!/bin/bash
-minor_version=$(grep "%define selenium_version" src/rpm/SPECS/selenium.spec |awk'{print $3}')
+minor_version=$(grep "%define selenium_version" src/rpm/SPECS/selenium.spec |awk '{print $3}')
 chromedriver_version=$(grep "%define chromedriver_version" src/rpm/SPECS/selenium.spec |awk '{print $3}')
 geckodriver_version=$(grep "%define geckodriver_version" src/rpm/SPECS/selenium.spec |awk '{print $3}')
 major_version=$(echo $minor_version|sed s:"\.[0-9]*$":"":g)

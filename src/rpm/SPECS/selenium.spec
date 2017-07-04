@@ -1,19 +1,21 @@
 %define selenium_version 3.3.1
 %define chromedriver_version 2.30
 %define geckodriver_version 0.17.0
-Name:       selenium
-Version:    %{versionModule}
-Release:    %{selenium_version}.%{releaseModule}
-Epoch:      2
-Summary:    Selenium automates browsers
-Group:      develenv
-License:    http://creativecommons.org/licenses/by/3.0/
-Packager:   softwaresano.com
-URL:        http://www.seleniumhq.org/
-BuildArch:  noarch
-BuildRoot:  %{_topdir}/BUILDROOT
-Requires:   ss-develenv-user >= 33 httpd jdk xorg-x11-server-Xvfb libXfont libXrandr google-chrome-stable firefox
-Vendor:     softwaresano
+Name:        selenium
+Version:     %{versionModule}
+Release:     %{selenium_version}.%{releaseModule}
+Epoch:       2
+Summary:     Selenium automates browsers
+Group:       develenv
+License:     http://creativecommons.org/licenses/by/3.0/
+Packager:    softwaresano.com
+URL:         http://www.seleniumhq.org/
+BuildArch:   x86_64
+BuildRoot:   %{_topdir}/BUILDROOT
+Requires:    ss-develenv-user >= 33 httpd jdk xorg-x11-server-Xvfb libXfont libXrandr google-chrome-stable firefox
+Vendor:      softwaresano
+AutoReqProv: no
+
 
 %define target_dir /
 
