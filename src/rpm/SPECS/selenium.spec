@@ -1,4 +1,4 @@
-ssh -l %define selenium_version 3.3.1
+%define selenium_version 3.3.1
 %define chromedriver_version 2.30
 %define geckodriver_version 0.15.0
 Name:        selenium
