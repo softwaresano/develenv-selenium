@@ -1,0 +1,12 @@
+[Unit]
+Description=Selenium Webdriver
+After=selenium-hub.service
+
+[Service]
+Restart=yes
+User=develenv
+EnvironmentFile=/opt/ss/etc/selenium.cfg
+ExecStart=/bin/java -jar /opt/ss/develenv/platform/selenium/selenium-server-standalone.jar -role webdriver
+
+[Install]
+WantedBy=multi-user.target
