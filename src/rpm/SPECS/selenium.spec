@@ -45,6 +45,10 @@ rm -rf $RPM_BUILD_ROOT
 %install
 %{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/drivers
 cp -R %{_sourcedir}/artifacts/* $RPM_BUILD_ROOT/%{target_dir}
+ln -sf %{target_dir}/drivers/geckodriver ${RPM_BUILD_ROOT}/usr/bin/geckodriver
+ln -sf %{target_dir}/drivers/chromedriver ${RPM_BUILD_ROOT}/usr/bin/chromedriver
+
 %files
 %defattr(-,develenv,develenv,-)
-%{target_dir}
+%{target_dir}/*
+/usr/bin/*
