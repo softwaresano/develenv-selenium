@@ -1,0 +1,9 @@
+[Unit]
+Description=Xvfb
+
+[Service]
+Restart=yes
+ExecStart=/usr/bin/Xvfb :20 -ac -screen 0 1024x768x8 +extension RANDR
+
+[Install]
+WantedBy=multi-user.target
