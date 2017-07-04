@@ -45,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %install
 %{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/drivers ${RPM_BUILD_ROOT}/usr/bin/
 
-cp -R %{_sourcedir}/../../../target//artifacts/* $RPM_BUILD_ROOT/%{target_dir}
+cp -R %{_sourcedir}/../../../../target/artifacts/* $RPM_BUILD_ROOT/%{target_dir}
 ln -sf %{target_dir}/drivers/geckodriver ${RPM_BUILD_ROOT}/usr/bin/geckodriver
 ln -sf %{target_dir}/drivers/chromedriver ${RPM_BUILD_ROOT}/usr/bin/chromedriver
 
