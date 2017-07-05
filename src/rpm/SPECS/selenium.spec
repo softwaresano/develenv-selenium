@@ -12,7 +12,7 @@ Packager:    softwaresano.com
 URL:         http://www.seleniumhq.org/
 BuildArch:   x86_64
 BuildRoot:   %{_topdir}/BUILDROOT
-Requires:    ss-develenv-user >= 33 httpd jdk xorg-x11-server-Xvfb libXfont libXrandr google-chrome-stable firefox
+Requires:    ss-develenv-user >= 33 httpd jdk xorg-x11-server-Xvfb libXfont libXrandr libNX_Xtst google-chrome-stable firefox
 Vendor:      softwaresano
 AutoReqProv: no
 
