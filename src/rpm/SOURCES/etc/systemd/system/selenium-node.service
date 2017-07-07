@@ -1,6 +1,6 @@
 [Unit]
 Description=Selenium Node
-After=selenium-node.service
+After=selenium-hub.service
 
 [Service]
 Restart=always

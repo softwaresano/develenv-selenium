@@ -1,6 +1,6 @@
 [Unit]
 Description=Selenium Hub
-After=network-online.target
+After=selenium-grid-extras.service
 
 [Service]
 Restart=always

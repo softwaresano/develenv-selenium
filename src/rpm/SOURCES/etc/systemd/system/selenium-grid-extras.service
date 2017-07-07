@@ -1,6 +1,6 @@
 [Unit]
 Description=Selenium Grid Extras
-After=selenium-grid-extras.service
+After=network-online.target
 
 [Service]
 Restart=always
