@@ -50,6 +50,14 @@ systemctl daemon-reload
 # ------------------------------------------------------------------------------
 %install
 %{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/drivers ${RPM_BUILD_ROOT}/usr/bin/
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/grid/configs
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/grid/log
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/grid/shared
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/grid/video_output
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/hub/log/sessions_logs
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/hub/shared/
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/hub/video_output
+%{__mkdir_p} $RPM_BUILD_ROOT/%{target_dir}/node/log
 
 cp -R %{_sourcedir}/../../../target/artifacts/* $RPM_BUILD_ROOT/%{target_dir}
 cp -R %{_sourcedir}/* ${RPM_BUILD_ROOT}/
@@ -60,5 +68,6 @@ ln -sf %{target_dir}/drivers/chromedriver ${RPM_BUILD_ROOT}/usr/bin/chromedriver
 %defattr(-,develenv,develenv,-)
 %{target_dir}/*
 /opt/ss/etc/*
+/opt/ss/develenv/platform/selenium
 /usr/bin/*
 /etc/systemd/system/*

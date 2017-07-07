@@ -5,7 +5,7 @@ After=network-online.target
 [Service]
 Restart=yes
 User=develenv
-ExecStart=/bin/java -jar /opt/ss/develenv/platform/selenium/selenium-server-standalone.jar -role hub
+ExecStart=/opt/ss/develenv/platform/selenium/hub/start_selenium_hub_extras.sh
 
 [Install]
 WantedBy=multi-user.target
