@@ -3,7 +3,7 @@ Description=Selenium Hub
 After=network-online.target
 
 [Service]
-Restart=yes
+Restart=always
 User=develenv
 ExecStart=/opt/ss/develenv/platform/selenium/hub/start_selenium_hub_extras.sh
 

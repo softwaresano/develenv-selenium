@@ -3,7 +3,7 @@ Description=Selenium Grid Extras
 After=selenium-grid-extras.service
 
 [Service]
-Restart=yes
+Restart=always
 User=develenv
 EnvironmentFile=/opt/ss/etc/develenv-selenium.cfg
 ExecStart=/opt/ss/develenv/platform/selenium/grid/start_selenium_grid_extras.sh
