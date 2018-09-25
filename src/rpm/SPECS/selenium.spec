@@ -1,4 +1,4 @@
-%define selenium_version 3.3.1
+%define selenium_version 3.14.0
 %define chromedriver_version 2.31
 %define geckodriver_version 0.18.0
 Name:        selenium
