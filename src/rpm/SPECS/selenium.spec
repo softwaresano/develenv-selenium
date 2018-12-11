@@ -1,4 +1,4 @@
-%define selenium_version 3.14.0
+%define selenium_version 3.141.59
 %define chromedriver_version 2.31
 %define geckodriver_version 0.18.0
 Name:        selenium
@@ -12,7 +12,7 @@ Packager:    softwaresano.com
 URL:         http://www.seleniumhq.org/
 BuildArch:   x86_64
 BuildRoot:   %{_topdir}/BUILDROOT
-Requires:    ss-develenv-user >= 33 httpd jdk xorg-x11-server-Xvfb libXfont libXrandr libNX_Xtst google-chrome-stable firefox
+Requires:    ss-develenv-user >= 33 httpd jdk xorg-x11-server-Xvfb libXfont libXrandr nx-libs google-chrome-stable firefox
 Vendor:      softwaresano
 AutoReqProv: no
 
