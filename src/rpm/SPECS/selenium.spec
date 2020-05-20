@@ -1,5 +1,5 @@
 %define selenium_version 3.141.59
-%define chromedriver_version 72.0.3626.69
+%define chromedriver_version 81.0.4044.138
 %define geckodriver_version 0.24.0
 Name:        selenium
 Version:     %{versionModule}
