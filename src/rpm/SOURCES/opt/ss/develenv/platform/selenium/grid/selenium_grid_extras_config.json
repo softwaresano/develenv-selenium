@@ -8,20 +8,25 @@
     "default_role": "hub",
     "chromedriver": {
       "bit": "64",
-      "version": "2.30"
+      "version": "83.0.4103.39"
     },
     "auto_update_drivers": "0",
     "auto_start_node": "0",
     "hub_config": {},
     "geckodriver": {
-      "version": "0.15.0"
+      "version": "0.24.0"
+    },
+    "video_recording_options": {
+      "record_test_videos": "false"
     },
     "log_maximum_age_ms": 864000000,
     "reboot_after_sessions": "0",
     "grid_extras_port": "3000",
     "webdriver": {
-      "version": "3.1.1"
+      "version": "3.141.59"
     },
-    "node_config_files": []
+    "node_config_files": [
+      "../node/node_5566.json"
+    ]
   }
 }
