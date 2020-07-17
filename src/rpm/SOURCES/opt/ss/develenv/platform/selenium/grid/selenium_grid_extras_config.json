@@ -8,7 +8,7 @@
     "default_role": "hub",
     "chromedriver": {
       "bit": "64",
-      "version": "83.0.4103.39"
+      "version": "84.0.4147.30"
     },
     "auto_update_drivers": "0",
     "auto_start_node": "0",
