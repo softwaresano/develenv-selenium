@@ -1,6 +1,6 @@
 #!/bin/bash -e
 minor_version=$(grep "%define selenium_version" src/rpm/SPECS/selenium.spec |awk '{print $3}')
-chromedriver_version=$(curl -f https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+chromedriver_version=$(curl -f https://chromedriver.storage.googleapis.com/LATEST_RELEASE_88)
 geckodriver_version=$(curl -f https://github.com/mozilla/geckodriver/releases/latest|grep -Po  '(?<=tag/).*(?=")')
 [[ "${geckodriver_version}" == '' ]] && exit 1
 major_version=$(echo $minor_version|sed s:"\.[0-9]*$":"":g)
