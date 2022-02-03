@@ -1,5 +1,5 @@
 develenv-selenium
 ================
 
-Selenium for develenv in rh7
+Selenium for develenv in rh8
 
