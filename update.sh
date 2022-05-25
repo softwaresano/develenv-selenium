@@ -1,7 +1,7 @@
-#!/bin/bash -e
+#!/bin/bash -ex
 minor_version=$(grep "%define selenium_version" src/rpm/SPECS/selenium.spec |awk '{print $3}')
 chromedriver_version=$(curl -f https://chromedriver.storage.googleapis.com/LATEST_RELEASE_102)
-geckodriver_version=$(curl -f https://github.com/mozilla/geckodriver/releases/latest|grep -Po  '(?<=tag/).*(?=")')
+geckodriver_version=$(curl -I -f -s  https://github.com/mozilla/geckodriver/releases/latest|grep --color=no -Po '(?<=releases/tag/).*(?=\r)')
 [[ "${geckodriver_version}" == '' ]] && exit 1
 major_version=$(echo $minor_version|sed s:"\.[0-9]*$":"":g)
 selenium_grid_extras_version=2.0.4
