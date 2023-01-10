@@ -1,7 +1,8 @@
 %define selenium_version 3.141.59
+%define chromedriver_version 108
 Name:        selenium
 Version:     %{versionModule}
-Release:     %{selenium_version}.%{releaseModule}
+Release:     %{selenium_version}.%{chromedriver_version}.%{releaseModule}
 Epoch:       2
 Summary:     Selenium automates browsers
 Group:       develenv
