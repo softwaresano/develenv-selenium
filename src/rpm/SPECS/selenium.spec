@@ -1,5 +1,5 @@
 %define selenium_version 3.141.59
-%define chromedriver_version 112
+%define chromedriver_version 113
 Name:        selenium
 Version:     %{versionModule}
 Release:     %{selenium_version}.%{chromedriver_version}.%{releaseModule}
