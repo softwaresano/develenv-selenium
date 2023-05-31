@@ -1,0 +1,6 @@
+[requires]
+python_version="3.9"
+
+
+[packages]
+chromedriver-py="=114.0.5735.16"
