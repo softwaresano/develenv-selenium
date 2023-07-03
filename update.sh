@@ -1,5 +1,5 @@
 #!/bin/bash -ex
-minor_version=$(grep "%define selenium_version" src/rpm/SPECS/selenium.spec | awk '{print $3}')
+minor_version=$(grep --color=no -Po '(?<=      <version>).*(?=<)' pom.xml)
 chromedriver_version=$(grep --color=no -Po '(?<=chromedriver-py="=).*(?=\")' Pipfile)
 geckodriver_version=$(curl -I -f -s https://github.com/mozilla/geckodriver/releases/latest | grep --color=no -Po '(?<=releases/tag/).*(?=\r)')
 [[ ${geckodriver_version} == '' ]] && exit 1
