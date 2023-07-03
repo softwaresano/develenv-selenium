@@ -1,0 +1,15 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.telefonica.cdn</groupId>
+  <artifactId>cdn-build</artifactId>
+  <version>23.3.100</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>4.10.0</version>
+      <scope>runtime</scope>
+    </dependency>
+  </dependencies>
+</project>
+
