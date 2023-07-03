@@ -12,7 +12,7 @@ gecko_driver_url=https://github.com/mozilla/geckodriver/releases/download/${geck
 rm -Rf target/artifacts
 mkdir -p target/artifacts/drivers
 cd target/artifacts
-curl -f -k -L "${selenium_url:}" >selenium-server-standalone.jar || exit 1
+curl -f -k -L "${selenium_url:?}" >selenium-server-standalone.jar || exit 1
 curl -f -k -L "${selenium_grid_extras_url:?}" >SeleniumGridExtras.jar || exit 1
 curl -f -k -L $gecko_driver_url | tar xfz -
 
