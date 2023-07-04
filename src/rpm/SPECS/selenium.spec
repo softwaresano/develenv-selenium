@@ -1,4 +1,4 @@
-%define selenium_version 3.141.59
+%define selenium_version %(grep --color=no -Po '(?<=      <version>).*(?=<)' pom.xml)
 %define chromedriver_version %(grep --color=no -Po '(?<=chromedriver-py="=).*(?=\")' Pipfile)
 Name:        selenium
 Version:     %{versionModule}
