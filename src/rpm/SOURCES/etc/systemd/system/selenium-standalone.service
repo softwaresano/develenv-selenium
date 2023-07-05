@@ -6,7 +6,7 @@ After=selenium-standalone.service
 Restart=always
 User=develenv
 EnvironmentFile=/opt/ss/etc/develenv-selenium.cfg
-ExecStart=/usr/bin/java -jar /opt/ss/develenv/platform/selenium/selenium-server-standalone.jar standalone --maxsession 2
+ExecStart=/usr/bin/java -jar /opt/ss/develenv/platform/selenium/selenium-server-standalone.jar standalone --max-sessions 2
 
 [Install]
 WantedBy=multi-user.target
