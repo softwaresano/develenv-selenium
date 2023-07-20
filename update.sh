@@ -19,6 +19,6 @@ curl -f -k -L $gecko_driver_url | tar xfz -
 cd drivers || exit 1
 curl -f -k -O $chrome_driver_url
 zip_file=$(basename $chrome_driver_url)
-unzip $zip_file
+unzip -j "${zip_file:?}" chromedriver-linux64/chromedriver
 rm -Rf $zip_file
 curl -k -L $gecko_driver_url | tar xfz -
