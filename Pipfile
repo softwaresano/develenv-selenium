@@ -3,4 +3,4 @@ python_version="3.9"
 
 
 [packages]
-chromedriver-py="=115.0.5790.98"
+chromedriver-py="=116.0.5845.96"
