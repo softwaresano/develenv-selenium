@@ -13,7 +13,7 @@ rm -Rf target/artifacts
 mkdir -p target/artifacts/drivers
 cd target/artifacts
 curl -f -k -L "${selenium_url:?}" >selenium-server-standalone.jar || exit 1
-curl -f --netrc-file "${CDN_BUILD_LIB:?}"/makefiles/conf/tid-cdn.netrc -O https://nexus.tid.es/repository/raw-tcdn-misc/artifacts/SeleniumGridExtras.jar || exit 1
+curl -f --netrc-file "${CDN_BUILD_LIB:-/opt/p2pcdn/var/lib/build}"/makefiles/conf/tid-cdn.netrc -O https://nexus.tid.es/repository/raw-tcdn-misc/artifacts/SeleniumGridExtras.jar || exit 1
 curl -f -k -L $gecko_driver_url | tar xfz -
 
 cd drivers || exit 1
