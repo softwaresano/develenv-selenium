@@ -2,4 +2,4 @@
 python_version="3.9"
 
 [packages]
-chromedriver-py="=143.0.7499.40"
+chromedriver-py="=144.0.7559.59"
